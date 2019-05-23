@@ -1,7 +1,7 @@
 import java.util.*;
 public class Finals_Calculator_ROGERHUB {
 
-	public static void main(String[] args) {
+	public static void finalsCalculator() {
 		System.out.println("Finals Calculator a.k.a ROGERHUB");
 		Scanner userinput = new Scanner(System.in);
 		System.out.println("What's your Grade Percentage in the class?");
