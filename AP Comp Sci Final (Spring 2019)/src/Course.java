@@ -18,21 +18,23 @@ public class Course {
 		}
 	}
 	
+	//returns grade value with AP bump
 	public double getweight() {
-		if(grade > 'D') {
-			return ('F' - grade) + 2;
+		if(grade < 'D') {
+			return ('F' - grade);
 		}
 		else {
-			return (0);
+			return (getunweightedvalue());
 		}
 	}
 	
+	//returns grade value with NO AP bump
 	public double getunweightedvalue() {
 		if(grade == 'F') {
 			return(0);
 		}
 		else {
-			return('F' - grade) + 1;
+			return('E' - grade);
 		}
 	}
 	
