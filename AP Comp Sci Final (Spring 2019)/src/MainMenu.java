@@ -1,4 +1,4 @@
-package Graphics;
+
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -9,6 +9,7 @@ import javax.swing.*;
 public class MainMenu extends JFrame {
 	
 	private JButton button;
+	private JButton button2;
 	private JPanel jp = new JPanel();
 	private JTextField textArea;
 	
@@ -34,9 +35,10 @@ public class MainMenu extends JFrame {
 		//////////////////////////////////////	creating typable areas		//////////////////////////
 		setLayout(new BorderLayout());
 		button = new JButton("GPA Calculator");
+		button2 = new JButton("RogerHub");
 		
-		add(button, BorderLayout.SOUTH); //adds
-		
+		add(button, BorderLayout.WEST); //adds
+		add(button2, BorderLayout.EAST);
 
 		textArea = new JTextField(20); //creates a text box that is 30 characters long
 		jp.add(textArea);
